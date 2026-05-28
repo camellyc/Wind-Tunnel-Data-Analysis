@@ -1,0 +1,1 @@
+This repository contains code for analyzing wind tunnel data collected in the large wind tunnel (2 × 0.6 × 0.6 m) of the van Breugel Lab at the University of Nevada, Reno. Yichen Luo (Tuthill Lab) added plotting code at the end to visualize the average Z trajectory and the vertical (Z) descent before versus after optogenetic stimulation.
