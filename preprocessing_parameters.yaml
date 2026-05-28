@@ -1,0 +1,40 @@
+# where to store preprocessed data
+preprocessed_data_subdir:  'preprocessed_data'
+
+# look at a snippet of the braidz:
+last_frame: -1 # -1 is everything
+
+# basic filtering parameters
+min_length: 200
+min_xdist_travelled: 0.1
+
+# trigger details
+trigger_yaml_subdir: 'exp_code'
+trigger_yaml_suffix: 'trigger_in_volume_yichen'
+trigger_column_names_key: 'column_names'
+trigger_bag_name_identifier: 'braid_triggers' # something unique in the name that can be used to find the trigger bag file 
+trigger_first_column_to_rename: 'data_4' # look at the trigger_df and make sure this corresponds to the first column that needs renaming
+
+# where to save trajectory stats
+trajec_stats_yaml_filename: 'trajectory_statistics_and_filtering.yaml'
+
+# frame rate of data
+dt: 0.01
+
+# frames before and after each trigger event
+frames_before: 20
+frames_after: 600
+frames_after_min: 300
+
+# volumetric filtering: only keep trajectory snippets in this volume
+xmin: -2
+xmax: 2
+ymin: -0.4
+ymax: 0.4
+zmin: 0.01
+zmax: 0.7
+
+# preprocessed filename suffixes
+slightly_filtered_data: '_preprocessed.hdf'
+only_triggering_trajecs: '_preprocessed_optotrigger.hdf'
+filtered_aligned_events: '_preprocessed_optotrigger_trimmed.hdf'

@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.hdf
+
+# Logs
+*.log
